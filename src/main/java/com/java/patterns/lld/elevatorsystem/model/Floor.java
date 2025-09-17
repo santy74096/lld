@@ -3,12 +3,14 @@ package com.java.patterns.lld.elevatorsystem.model;
 import com.java.patterns.lld.elevatorsystem.dispatcher.ExternalDispatcher;
 import com.java.patterns.lld.elevatorsystem.model.button.Button;
 import com.java.patterns.lld.elevatorsystem.model.button.ExternalButton;
+import lombok.Getter;
 
+@Getter
 public class Floor {
 
-    private int id;
-    private Display display;
-    private Button button;
+    public int id;
+    public Display display;
+    public Button button;
 
     public Floor(int id){
         this.id = id;
